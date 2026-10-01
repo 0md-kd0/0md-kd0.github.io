@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alex — Ph.D. Student cybersecurity & AI" />
+  <meta name="author" content="Alex D." />
+  <title>Alex D. | Cybersecurity & AI Security</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Alex D home">
+        <span class="brand-mark">AD</span>
+        <span>Alex D.</span>
+      </a>
+      <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="siteNav">Menu</button>
+      <nav id="siteNav" class="site-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#service">Service</a>
+        <a href="assets/cv/Alex_D_CV.pdf">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Cybersecurity · AI Security</p>
+          <h1>Alex D.</h1>
+          <p class="role">Ph.D. student, University of Michigan</p>
+          <p class="lead">
+              I am a Ph.D. student in Computer Science and Engineering (CSE) at University of Michigan.
+              My research focuses on .....
+          </p>
+          <div class="actions" aria-label="Professional links">
+            <a class="button primary" href="#publications">View Publications</a>
+            <a class="button" href="assets/cv/Alex_D_CV.pdf">Download CV</a>
+          </div>
+          <div class="link-row">
+            <a href="https://github.com/tneduts2025" target="_blank" rel="noopener">GitHub</a>
+            <a href="YOUR_GOOGLE_SCHOLAR_URL" target="_blank" rel="noopener">Google Scholar</a>
+            <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="YOUR_ORCID_URL" target="_blank" rel="noopener">ORCID</a>
+            <a href="...">Email</a>
+          </div>
+        </div>
+
+        <aside class="profile-card" aria-label="Profile summary">
+          <div class="portrait-placeholder" role="img" aria-label="Profile photo placeholder">
+            <span>MA</span>
+            <small>Add your photo here</small>
+          </div>
+          <div class="profile-details">
+            <strong>Michigan State University</strong>
+            <span>Computer Science and Engineering (CSE)</span>
+            <span>Ann Arbor, Michigan, USA</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="research" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Research Interests</h2>
+          <p>I study practical security problems that emerge when powerful machine-learning models move from cloud services onto end-user devices.</p>
+        </div>
+        <div class="interest-grid">
+          <article class="card">
+            <span class="card-number">01</span>
+            <h3>On-Device LLM Security</h3>
+            <p>Security analysis of LLMs embedded in mobile applications, including runtime behavior, deployment pipelines, and model protection.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">02</span>
+            <h3>Model Extraction & Reconstruction</h3>
+            <p>Techniques for identifying, recovering, and reconstructing executable LLM artifacts across heterogeneous mobile inference frameworks.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">03</span>
+            <h3>Adversarial Machine Learning</h3>
+            <p>Post-extraction attacks, behavioral replication, model safety degradation, backdoors, and other adversarial risks affecting deployed AI.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">04</span>
+            <h3>AI & Mobile Systems Security</h3>
+            <p>Static and dynamic analysis of mobile AI systems, native runtimes, model-loading behavior, and application-level security boundaries.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected Research Projects</h2>
+        </div>
+        <div class="project-list">
+          <article class="project">
+            <div class="project-meta">Current · Dissertation Research</div>
+            <h3>LLMEXTRACTOR: Security Analysis of On-Device LLM Extraction and Replication</h3>
+            <p>
+              A security-analysis pipeline for discovering on-device LLMs in real-world Android applications, recovering model artifacts,
+              reconstructing executable models, and validating post-extraction risks. The work combines static analysis, native-code analysis,
+              guided runtime instrumentation, and framework-aware reconstruction across multiple mobile LLM runtimes.
+            </p>
+            <div class="tag-row">
+              <span>Android</span><span>LLM Security</span><span>Static Analysis</span><span>Dynamic Analysis</span><span>Frida</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-meta">Post-Extraction Security</div>
+            <h3>Downstream Security Risks of Recovered LLMs</h3>
+            <p>
+              Investigating how extraction changes the threat surface of an application-embedded model. Current experiments evaluate whether
+              independently executable recovered models can be subjected to inference-time adversarial techniques outside the host application's controls.
+            </p>
+            <div class="tag-row">
+              <span>CoTA</span><span>BackdoorLLM</span><span>GGUF</span><span>Adversarial ML</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-meta">LLM Safety</div>
+            <h3>Behavioral Distillation and Safety Alignment</h3>
+            <p>
+              Studying whether black-box behavioral replication can transfer useful capabilities while weakening safety alignment, with a focus on
+              security consequences in high-stakes LLM deployments.
+            </p>
+            <div class="tag-row">
+              <span>LLM Distillation</span><span>Safety Alignment</span><span>LoRA</span><span>Security Evaluation</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2>Selected Publications</h2>
+          <p class="edit-note">Replace the placeholder author lists, venues, and links below with your final bibliographic information.</p>
+        </div>
+
+        <div class="pub-year">
+          <h3>2026</h3>
+          <article class="publication">
+            <p class="pub-title">Black-Box Behavioral Distillation Breaks Safety Alignment in Medical LLMs</p>
+            <p class="pub-authors"><strong>Mohammed Alduniawi</strong>, et al.</p>
+            <p class="pub-venue">PST 2026 · Add final publication status/details</p>
+            <div class="pub-links"><a href="#">Paper</a><a href="#">Code</a><a href="#">BibTeX</a></div>
+          </article>
+        </div>
+
+        <div class="pub-year">
+          <h3>Earlier Work</h3>
+          <article class="publication">
+            <p class="pub-title">On-Device Machine Learning / LLM Model Extraction Research</p>
+            <p class="pub-authors"><strong>Mohammed Alduniawi</strong>, et al.</p>
+            <p class="pub-venue">Replace this entry with the exact title, author order, venue, year, DOI, and artifact links from your paper.</p>
+            <div class="pub-links"><a href="#">Paper</a><a href="#">Project</a><a href="#">BibTeX</a></div>
+          </article>
+          <article class="publication">
+            <p class="pub-title">Add Your Third Dissertation-Related Publication Here</p>
+            <p class="pub-authors"><strong>Mohammed Alduniawi</strong>, et al.</p>
+            <p class="pub-venue">Venue · Year</p>
+            <div class="pub-links"><a href="#">Paper</a><a href="#">Code</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="teaching" class="section">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="eyebrow">Teaching</p>
+          <h2>Teaching & Mentoring</h2>
+        </div>
+        <div class="simple-block">
+          <p>Add teaching-assistant roles, guest lectures, student mentoring, cybersecurity labs, or capstone supervision here.</p>
+          <p class="muted">If you prefer, this section can be hidden until you have entries you want to show publicly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="section section-alt">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="eyebrow">Service</p>
+          <h2>Academic Service & Honors</h2>
+        </div>
+        <div class="two-column-list">
+          <div>
+            <h3>Service</h3>
+            <p>Add peer-review activity, conference volunteering, student organizations, lab service, or professional memberships.</p>
+          </div>
+          <div>
+            <h3>Honors & Awards</h3>
+            <p>Add scholarships, travel awards, research awards, competitive recognitions, or other academic honors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Research collaboration</h2>
+          <p>I am interested in research discussions and collaborations related to cybersecurity, AI security, and on-device large language models.</p>
+        </div>
+        <a class="button primary" href="mailto:YOUR_FIU_EMAIL">Email Me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Mohammed Alduniawi</p>
+      <p>Built as a lightweight static site for GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const menuButton = document.getElementById('menuButton');
+    const nav = document.getElementById('siteNav');
+    menuButton.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        menuButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>
